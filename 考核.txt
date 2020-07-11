@@ -1,0 +1,21 @@
+//以下对象都是⾮集合类对象，指出它们是深复制还
+是浅复制（有im前缀是⾮可变对象，没有是可变对象）
+ [immutableObject copy]         //浅复制    
+ [immutableObject mutableCopy]  //深复制
+ [mutableObject copy]           //深复制
+ [mutableObject mutableCopy]    //深复制
+//指出它们是深复制还是浅复制（两条语句）
+
+NSMutableString *string = [NSMutableStringstringWithString:@"origin"]; //深复制
+NSString *stringCopy = [string copy];  //浅复制
+//以下对象都是集合类对象，指出它们是深复制还是
+浅复制（如果部分深复制，请详细说明）（有im前缀是⾮可变对
+象，没有是可变对象）
+ [immutableObject copy]        //浅复制
+ [immutableObject mutableCopy] //部分深复制
+ [mutableObject copy]          //部分深复制
+ [mutableObject mutableCopy]   //部分深复制
+//集合的深复制有两种⽅法。简要说明两种⽅法（说
+出关键⽅法或关键字即可）
+
+mutableCopy  mutable
